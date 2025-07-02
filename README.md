@@ -1,4 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Telegram AI Monitoring Frontend
+
+## Запуск
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## Структура
+- src/app — страницы (App Router)
+- src/components — UI-компоненты, ErrorBoundary, Toast, LogoutButton
+- src/hooks — хуки для загрузки данных
+- src/store — Zustand store
+- src/utils — утилиты
+
+## Основные разделы
+- Авторизация через Telegram
+- Дашборд (статистика, графики)
+- Проекты и подпроекты (CRUD)
+- Промпты (редактор, версии)
+- Каналы (добавление, фильтры, включение/отключение)
+- Модерация (таблица, действия)
+- Интеграции (Bot API, MTProto)
+- Профиль (редактирование, выход)
+
+## .env.local пример
+```
+NEXT_PUBLIC_TELEGRAM_BOT=your_bot_username
+API_URL=http://localhost:8000
+```
+
+## Тесты
+- Для хуков и компонентов: Jest, React Testing Library
+
+## Дополнительно
+- ErrorBoundary для глобальных ошибок
+- Toast для уведомлений
+- Защита роутов
+- Современный UI/UX (Tailwind, shadcn/ui)
+
+## Описание
+
+Frontend на Next.js 14 (TypeScript, Tailwind CSS, Zustand/React Query, shadcn/ui). Авторизация через Telegram, JWT, интеграция с backend REST API.
 
 ## Getting Started
 
